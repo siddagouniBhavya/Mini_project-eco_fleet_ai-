@@ -1,0 +1,4 @@
+VesselID,ShipName,VesselType,Capacity_tons,DWT_kg,MinSpeed_kmh,MaxSpeed_kmh,EnginePower_kW,FuelType,OperatingCost_per_hour,Status
+V001,Ocean Star,Container,5000,6500000,18,36,12000,Diesel,500,AVAILABLE
+V002,Sea Wind,Bulk Carrier,4500,5000000,18,32,10000,LNG,450,AVAILABLE
+V003,Blue Horizon,Tanker,6000,7200000,18,40,14000,Methanol,520,MAINTENANCE

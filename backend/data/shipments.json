@@ -1,0 +1,31 @@
+[
+  {
+    "shipment_id": "51d75af5-eacd-469d-8a90-4898ccc6f96d",
+    "cargo_demand_tons": 8000,
+    "origin": "Port A",
+    "destination": "Port B",
+    "distance_km": 1000,
+    "deadline_hours": 60,
+    "status": "COMPLETED",
+    "selected_vessel_ids": [
+      "V001",
+      "V006"
+    ],
+    "plan": {
+      "vessel_ids": [
+        "V001",
+        "V006"
+      ],
+      "speed_strategy": "FAST",
+      "metrics": {
+        "travel_time_hours": 34.722,
+        "total_fuel_kg": 216495.36,
+        "total_cost": 16255758.86,
+        "total_ghg_kg": 495118.699
+      },
+      "fitness": {
+        "green_score": 0.067
+      }
+    }
+  }
+]

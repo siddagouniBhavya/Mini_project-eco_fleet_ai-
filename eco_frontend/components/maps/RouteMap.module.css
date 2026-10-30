@@ -1,0 +1,167 @@
+.mapFrame {
+  position: relative;
+  width: 100%;
+  height: 440px;
+  overflow: hidden;
+  border: 1px solid rgba(112, 196, 221, 0.17);
+  border-radius: 16px;
+  background: #0b1d2b;
+}
+
+.map {
+  width: 100%;
+  height: 100%;
+  background: #0b1d2b;
+}
+
+.mapLegend {
+  position: absolute;
+  z-index: 500;
+  top: 14px;
+  left: 14px;
+  right: 14px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 14px;
+  padding: 10px 12px;
+  border: 1px solid rgba(132, 192, 215, 0.16);
+  border-radius: 10px;
+  background: rgba(7, 20, 33, 0.91);
+  backdrop-filter: blur(12px);
+  color: #b7cedb;
+  font-size: 10px;
+}
+
+.mapLegend span {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.mapLegend i,
+.mapFooter i {
+  display: inline-block;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+}
+
+.legendOrigin {
+  background: #4fe0df;
+}
+
+.legendDestination {
+  background: #64e5bd;
+}
+
+.legendVessel {
+  background: #4da8ff;
+  box-shadow: 0 0 8px rgba(77, 168, 255, 0.7);
+}
+
+.demoLabel {
+  margin-left: auto;
+  color: #f2c879;
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+}
+
+.markerWrapper {
+  background: transparent;
+  border: 0;
+}
+
+.portMarker {
+  display: grid;
+  width: 22px;
+  height: 22px;
+  place-items: center;
+  border: 2px solid #eafcff;
+  border-radius: 50%;
+  box-shadow: 0 0 15px rgba(79, 224, 223, 0.5);
+}
+
+.portMarker span {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #eafcff;
+}
+
+.originMarker {
+  background: #168c9b;
+}
+
+.destinationMarker {
+  background: #188b6e;
+  box-shadow: 0 0 15px rgba(100, 229, 189, 0.45);
+}
+
+.vesselMarker {
+  display: grid;
+  width: 36px;
+  height: 36px;
+  place-items: center;
+  border: 1px solid rgba(79, 224, 223, 0.7);
+  border-radius: 12px;
+  background: #102f45;
+  color: #67f1e4;
+  font-size: 22px;
+  transform: rotate(-30deg);
+  box-shadow: 0 0 20px rgba(79, 224, 223, 0.22);
+}
+
+.mapFooter {
+  position: absolute;
+  z-index: 500;
+  right: 12px;
+  bottom: 12px;
+  left: 12px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding: 9px 11px;
+  border: 1px solid rgba(132, 192, 215, 0.14);
+  border-radius: 9px;
+  background: rgba(7, 20, 33, 0.91);
+  color: #8daaba;
+  font-size: 10px;
+}
+
+.mapFooter span:first-child {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.mapFooter i {
+  background: #64e5bd;
+  box-shadow: 0 0 8px rgba(100, 229, 189, 0.6);
+}
+
+@media (max-width: 640px) {
+  .mapFrame {
+    height: 370px;
+  }
+
+  .mapLegend {
+    gap: 9px;
+    top: 8px;
+    left: 8px;
+    right: 8px;
+    padding: 8px;
+  }
+
+  .demoLabel {
+    margin-left: 0;
+  }
+
+  .mapFooter {
+    right: 8px;
+    bottom: 8px;
+    left: 8px;
+  }
+}

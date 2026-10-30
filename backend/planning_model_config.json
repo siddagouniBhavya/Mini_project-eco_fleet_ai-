@@ -1,0 +1,49 @@
+{
+    "planning_features": [
+        "Ship_SpeedOverGround",
+        "Ship_SpeedThroughWater",
+        "Ship_Heading",
+        "Ship_Bearing",
+        "Weather_WindSpeed10M",
+        "Weather_WindDirection10M",
+        "Weather_WaveHeight",
+        "Weather_WaveDirection",
+        "Weather_WavePeriod",
+        "Weather_OceanCurrentVelocity",
+        "Weather_OceanCurrentDirection",
+        "Weather_Temperature2M",
+        "Weather_SurfacePressure",
+        "Weather_Precipitation",
+        "Environment_SeaFloorDepth"
+    ],
+    "direction_columns": [
+        "Ship_Heading",
+        "Ship_Bearing",
+        "Weather_WindDirection10M",
+        "Weather_WaveDirection",
+        "Weather_OceanCurrentDirection"
+    ],
+    "processed_features": [
+        "Ship_SpeedOverGround",
+        "Ship_SpeedThroughWater",
+        "Weather_WindSpeed10M",
+        "Weather_WaveHeight",
+        "Weather_WavePeriod",
+        "Weather_OceanCurrentVelocity",
+        "Weather_Temperature2M",
+        "Weather_SurfacePressure",
+        "Weather_Precipitation",
+        "Environment_SeaFloorDepth",
+        "Ship_Heading_sin",
+        "Ship_Heading_cos",
+        "Ship_Bearing_sin",
+        "Ship_Bearing_cos",
+        "Weather_WindDirection10M_sin",
+        "Weather_WindDirection10M_cos",
+        "Weather_WaveDirection_sin",
+        "Weather_WaveDirection_cos",
+        "Weather_OceanCurrentDirection_sin",
+        "Weather_OceanCurrentDirection_cos"
+    ],
+    "target": "Consumer_Total_MomentaryFuel"
+}
